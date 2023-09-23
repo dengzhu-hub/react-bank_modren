@@ -1,4 +1,4 @@
-import { NavBar } from "./components";
+import { NavBar, Stats } from "./components";
 import styles from "./style";
 const App = () => (
   <div className=" w-full bg-primary overflow-hidden">
@@ -8,7 +8,9 @@ const App = () => (
       </div>
     </div>
     <div className={`bg-primary ${styles.flexStart}`}>
-      <div className={`${styles.boxWidth}`}></div>
+      <div className={`${styles.boxWidth}`}>
+        <Stats/>
+      </div>
     </div>
     <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
       <div className={`${styles.boxWidth}`}></div>
